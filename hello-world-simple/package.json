@@ -1,0 +1,35 @@
+{
+  "name": "hello-world-simple",
+  "version": "0.1.0",
+  "description": "Generated Nutmeg Web Component",
+  "main": "dist/hello-world-simple.js",
+  "module": "dist/hello-world-simple.js",
+  "unpkg": "dist/hello-world-simple.min.js",
+  "types": "dist/hello-world-simple.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "hello-world-simple",
+    "nutmeg"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "nutmeg build .",
+    "prebuild": "nutmeg clean .",
+    "prepare": "npm run build -- --production",
+    "pretest": "npm run build",
+    "start": "nutmeg serve .",
+    "test": "nutmeg test .",
+    "watch": "nutmeg watch ."
+  },
+  "dependencies": {
+    "@nutmeg/seed": "0.16.1"
+  },
+  "devDependencies": {
+    "@nutmeg/cli": "0.16.1"
+  }
+}
