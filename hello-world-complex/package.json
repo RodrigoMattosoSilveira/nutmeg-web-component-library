@@ -18,7 +18,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "nutmeg build .",
+    "_build": "nutmeg build .",
+    "build": "webpack",
     "prebuild": "nutmeg clean .",
     "prepare": "npm run build -- --production",
     "pretest": "npm run build",
