@@ -4,11 +4,10 @@ import { UtilClass1 } from '../../util-lib/src/util-class-1';
 export class HelloWorldComplex extends Seed {
   @property() public name: string = '';
 
-  utilClass1: UtilClass1;
+  utilClass1: UtilClass1 = new UtilClass1();
 
   constructor() {
     super();
-    this.utilClass1 = new UtilClass1();
   }
 
   /** The component instance has been inserted into the DOM. */
@@ -55,7 +54,16 @@ export class HelloWorldComplex extends Seed {
 
   /** HTML Template for the component. */
   public get template(): TemplateResult {
-    return this.utilClass1.renderWebComponent(this.name) ;
+      const ulEl: HTMLElement = this.utilClass1.renderWebComponent(this.name);
+      return html`
+        <div class="content">
+          Welcome to &lt;hello-world-complex&gt;
+
+          ${ulEl}
+
+          <slot></slot>
+        </div>
+      `;
   }
 }
 
