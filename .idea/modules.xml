@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/web-component-library.iml" filepath="$PROJECT_DIR$/web-component-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nutmeg-web-component-library.iml" filepath="$PROJECT_DIR$/nutmeg-web-component-library.iml" />
     </modules>
   </component>
 </project>
