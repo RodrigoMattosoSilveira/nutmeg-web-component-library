@@ -57,7 +57,7 @@ export class HelloWorldSimple extends Seed {
 	renderWebComponent (name: string): TemplateResult {
 		return html`
 			<div class="content">
-				Welcome to &lt;hello-world-complex&gt;
+				Welcome to &lt;hello-world-simple&gt;
 				
 				<ul>
 					<li>name: ${name}</li>
