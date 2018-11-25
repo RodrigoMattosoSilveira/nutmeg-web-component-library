@@ -1,8 +1,9 @@
 import { Seed, property, html, TemplateResult } from '@nutmeg/seed';
-import { UtilClass1 } from '../../util-lib/src/util-class-1';
+import {UtilClass} from '../../util-lib/src/util-class';
+// import {UtilClass} from '../../util-lib/dist/util-class';
 
 export class HelloWorldComplex extends Seed {
-	@property() public name: string = '';
+	@property() public name = '';
 	
 	constructor() {
 		super();
@@ -52,7 +53,8 @@ export class HelloWorldComplex extends Seed {
 	
 	/** HTML Template for the component. */
 	public get template(): TemplateResult {
-		const ulEl: HTMLElement = UtilClass1.renderWebComponent(this.name);
+		console.log(`HelloWorldComplex::templare: entry`);
+		const ulEl: HTMLElement = UtilClass.renderWebComponent(this.name);
 		
 		return html`
 			<div class="content">
