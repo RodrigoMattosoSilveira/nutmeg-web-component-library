@@ -1,5 +1,6 @@
 import { Seed, property, html, TemplateResult } from '@nutmeg/seed';
 
+
 export class HelloWorldSimple extends Seed {
 	@property() public name = '';
 	
@@ -8,22 +9,22 @@ export class HelloWorldSimple extends Seed {
 	}
 	
 	/** The component instance has been inserted into the DOM. */
-		public connectedCallback() {
+	public connectedCallback() {
 		super.connectedCallback();
 	}
 	
 	/** The component instance has been removed from the DOM. */
-		public disconnectedCallback() {
+	public disconnectedCallback() {
 		super.disconnectedCallback();
 	}
 	
 	/** Watch for changes to these attributes. */
-		public static get observedAttributes(): string[] {
+	public static get observedAttributes(): string[] {
 		return super.observedAttributes;
 	}
 	
 	/** Rerender when the observed attributes change. */
-		public attributeChangedCallback(name: string, oldValue: any, newValue: any) {
+	public attributeChangedCallback(name: string, oldValue: any, newValue: any) {
 		super.attributeChangedCallback(name, oldValue, newValue);
 	}
 	
@@ -41,9 +42,9 @@ export class HelloWorldSimple extends Seed {
 				}
 				
 				.content {
-				background-color: var(--hello-world-simple-background-color, #FFFFFF);
-				color: #000000;
-				padding: 16px;
+					background-color: var(--hello-world-simple-background-color, #FFFFFF);
+					color: #000000;
+					padding: 16px;
 				}
 			</style>
 		`;
