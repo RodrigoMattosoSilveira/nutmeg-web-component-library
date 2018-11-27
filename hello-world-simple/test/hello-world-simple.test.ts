@@ -13,7 +13,7 @@ describe('<hello-world-simple>', () => {
     });
 
     it('renders default', () => {
-      expect(component.$('.content').innerText).to.include('Welcome to <hello-world-simple>');
+      expect(component.shadowRoot.querySelector('.content').innerText).to.include('Welcome to <hello-world-simple>');
     });
   });
 
@@ -24,7 +24,7 @@ describe('<hello-world-simple>', () => {
     });
 
     it('is rendered', () => {
-      expect(component.$('.content').innerText).to.include('name: Pickle');
+      expect(component.shadowRoot.querySelector('.content').innerText).to.include('name: Pickle');
     });
   });
 
@@ -46,7 +46,7 @@ describe('<hello-world-simple>', () => {
       });
 
       it('is set', () => {
-        expect(getComputedStyle(component.$('.content')).backgroundColor).equal('rgb(255, 255, 255)');
+        expect(getComputedStyle(component.shadowRoot.querySelector('.content')).backgroundColor).equal('rgb(255, 255, 255)');
       });
     });
 
@@ -65,7 +65,7 @@ describe('<hello-world-simple>', () => {
       });
 
       it('is set', () => {
-        expect(getComputedStyle(component.$('.content')).backgroundColor).equal('rgb(3, 169, 244)');
+        expect(getComputedStyle(component.shadowRoot.querySelector('.content')).backgroundColor).equal('rgb(3, 169, 244)');
       });
     });
   });
