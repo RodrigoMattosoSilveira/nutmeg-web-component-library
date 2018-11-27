@@ -1,45 +1,46 @@
 {
-  "name": "hello-world-simple",
-  "version": "0.1.0",
-  "description": "Generated Nutmeg Web Component",
-  "main": "dist/hello-world-simple.js",
-  "module": "dist/hello-world-simple.js",
-  "unpkg": "dist/hello-world-simple.min.js",
-  "types": "dist/hello-world-simple.d.ts",
-  "directories": {
-    "test": "test"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "keywords": [
+    "name": "hello-world-simple",
+    "version": "0.1.0",
+    "description": "Generated Nutmeg Web Component",
+    "main": "dist/hello-world-simple.js",
+    "module": "dist/hello-world-simple.js",
+    "unpkg": "dist/hello-world-simple.min.js",
+    "types": "dist/hello-world-simple.d.ts",
+    "directories": {
+        "test": "test"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "keywords": [
     "hello-world-simple",
     "nutmeg"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "watch": "webpack --watch --config webpack.dev.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
-  },
-  "dependencies": {
-    "@nutmeg/seed": "0.16.1"
-  },
-  "devDependencies": {
-    "clean-webpack-plugin": "^1.0.0",
-    "css-loader": "^1.0.1",
-    "csv-loader": "^3.0.2",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^0.23.1",
-    "@nutmeg/cli": "0.16.1",
-    "ts-loader": "^5.3.0",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6",
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-merge": "^4.1.4",
-    "xml-loader": "^1.2.1"
-  }
+    ],
+    "license": "MIT",
+    "scripts": {
+        "dev": "webpack --config webpack.dev.js",
+        "test": "karma start --single-run",
+        "watch": "karma start --no-single-run",
+        "prod": "webpack  --config webpack.prod.js"
+    },
+    "dependencies": {
+        "@nutmeg/seed": "0.16.1"
+    },
+    "devDependencies": {
+        "clean-webpack-plugin": "^1.0.0",
+        "css-loader": "^1.0.1",
+        "csv-loader": "^3.0.2",
+        "file-loader": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^0.23.1",
+        "@nutmeg/cli": "0.16.1",
+        "ts-loader": "^5.3.0",
+        "tslint": "^5.11.0",
+        "typescript": "^3.1.6",
+        "webpack": "^4.26.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10",
+        "webpack-merge": "^4.1.4",
+        "xml-loader": "^1.2.1"
+    }
 }
