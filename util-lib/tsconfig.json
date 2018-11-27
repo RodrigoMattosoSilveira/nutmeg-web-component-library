@@ -2,7 +2,6 @@
     "compileOnSave": true,
     "compilerOptions": {
         "baseUrl": ".",
-        "module": "commonjs",
         "noImplicitAny": true,
         "outDir": "tmp",
         "paths": {
@@ -11,9 +10,8 @@
         },
         "module": "es6",
         "moduleResolution": "node",
-        "target": "ES5",
+        "target": "ES6",
         "sourceMap": true,
-        "target": "es5",
         "types" : [
             "mocha",
             "expect.js"
