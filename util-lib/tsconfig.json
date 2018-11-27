@@ -1,7 +1,25 @@
 {
-  "extends": "./tsconfig.production",
-  "include": [
-    "src",
-    "test"
-  ]
+    "compileOnSave": true,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "tmp",
+        "paths": {
+            "src/*": ["./src/*"],
+            "src": ["./src"]
+        },
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "ES5",
+        "sourceMap": true,
+        "target": "es5",
+        "types" : [
+            "mocha",
+            "expect.js"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }
